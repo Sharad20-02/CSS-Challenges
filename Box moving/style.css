@@ -1,0 +1,38 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    animation-name: move-box;
+    animation-duration: 8s;
+    position: relative;
+}
+
+@keyframes move-box {
+    0%{background-color: red; top:0px; left:0px;}
+    25%{background-color: yellow; top: 0px; left:200px}
+    50%{background-color: rgb(69, 210, 241); top: 200px; left:200px}
+    75%{background-color: greenyellow; top: 200px; left:0px}
+    100%{background-color: red; top: 0px; left:0px}
+}
+
+.box1{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+}
+
+.box2{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+
+.box3{
+    background-color: yellowgreen;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
