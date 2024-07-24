@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+   width: 100%;
+   height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root{
+    --width: 800px;
+}
+
+.loader{
+    width: var(--width);
+    height: 80px;
+    background-color: gainsboro;
+    border-radius: 80px;
+}
+
+.progress{
+    background-color: red;
+    height: 80px;
+    border-radius: 80px;
+    width: calc(var(--width)/8);
+    animation-name: loading-animation;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading-animation {
+    0%{width: calc(var(--width)/8); background-color: red;}
+    50%{width: calc(var(--width)/2); background-color: blue;}
+    75%{width: calc(var(--width)); background-color: green;}
+    100%{width: calc(var(--width)); background-color: green;}
+}
