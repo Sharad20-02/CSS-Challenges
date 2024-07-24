@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root{
+    --width: 600px;
+    --height: 80px;
+}
+
+.progress-bar{
+    background-color: rgb(195, 187, 187);
+    width: var(--width);
+    height: var(--height);
+    border-radius: 80px;
+}
+
+.prog-status{
+    height: var(--height);
+    width: 0px;
+}
+
+.stage-1{
+    width: calc(var(--width)/4);
+    background-color: red;
+    border-radius: 80px;
+}
+
+.stage-2{
+    width: calc(var(--width)/4 * 2);
+    background-color: orangered;
+    border-radius: 80px;
+}
+
+.stage-3{
+    width: calc(var(--width)/4 *3);
+    background-color: yellowgreen;
+    border-radius: 80px;
+}
+
+.stage-4{
+    width: calc(var(--width));
+    background-color: green;
+    border-radius: 80px;
+}
